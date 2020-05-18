@@ -45,15 +45,16 @@ body{
 .home-input{
     width: 300px;
     text-align: center;
-    
-    border-radius: 25px;
+    color: red !important;
+    border-radius: 5px;
     background-color: transparent;
     border: 5px solid;
     border-image-slice: 1;
- 
-    
-    
+
     border-image-source: repeating-linear-gradient(280deg,rgb(110, 110, 110) 20%,rgb(238, 238, 238) 90%,rgb(110, 110, 110));
+}
+.home-input:focus{
+    background-color: transparent !important;
 }
 .sign-up-link{
     color: greenyellow;

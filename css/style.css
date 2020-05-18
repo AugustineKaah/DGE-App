@@ -45,7 +45,7 @@ body{
 .home-input{
     width: 300px;
     text-align: center;
-    color: red !important;
+    color: white !important;
     border-radius: 5px;
     background-color: transparent;
     border: 5px solid;
@@ -60,3 +60,138 @@ body{
     color: greenyellow;
     text-decoration: none;
 }
+
+
+
+
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    background: #f1f1f1;
+  }
+  nav {
+    background: #222;
+    padding: 5px 20px;
+  }
+  .menu>ul {
+    list-style-type: none;
+  }
+  .menu>.menu-item>a, .menu>.toggle>a, .menu>.menu-logo>a {
+    color: white;
+    text-decoration: none;
+  }
+  .menu>.menu-item>a:hover, .menu>.toggle>a:hover, .menu>.menu-logo>a:hover {
+    text-decoration: underline;
+  }
+  .menu-logo a:hover {
+    text-decoration: none;
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  .menu-logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .menu-item.button {
+    order: 2;
+  }
+  .menu-item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .menu-item.active {
+    display: block;
+  }
+  /* Tablet menu */
+  @media all and (min-width: 600px) {
+    .menu {
+      justify-content: center;
+    }
+    .menu-logo {
+      flex: 1;
+      text-align: right;
+      order: 1;
+    }
+    .toggle {
+      flex: 1;
+      text-align: left;
+    }
+    .menu-item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      order: 1;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button a {
+      padding: 7.5px 15px;
+      background: teal;
+      border: 1px #006d6d solid;
+    }
+    .button.secondary a {
+      background: transparent;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #006d6d;
+      border-color: #005959;
+    }
+    .button.secondary a:hover {
+      color: #ddd;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 900px) {
+    .menu-item {
+      display: block;
+      width: auto;
+    }
+    .toggle {
+      display: none;
+    }
+    .menu-logo {
+      order: 1;
+    }
+    .menu-item {
+      order: 1;
+    }
+    .button {
+      order: 2;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+    .menu li.button {
+      padding-right: 0;
+    }
+  }
+  
